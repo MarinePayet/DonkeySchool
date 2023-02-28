@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     padding: 20px 0;
+
 }
 
 .menu {
@@ -26,6 +27,15 @@ nav > img {
 
 img {
     border-radius: 3px;
+}
+
+.caroussel:hover {
+    opacity: 1;
+}
+
+.caroussel {
+    display: flex;
+    justify-content: center;
 }
 
 /* ----------------------- DROPDOWNS ---------------------*/

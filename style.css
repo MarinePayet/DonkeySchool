@@ -67,8 +67,22 @@ img {
 
   .dropdown-content a:hover {
     background-color: #f1f1f1
-=======
+  }
 
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* ------------------------ PROJETS REALISES ------------------------------ */
+
+.projet{
+    border-style: dashed;
+}
+.img-projet {
+    width: 400px;
+}
+
+.p-projet {
+    width: 400px;
 }

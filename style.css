@@ -98,18 +98,15 @@ h1 {
 }
 
 .card {
-    /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 300px;
   }
   
-  /* On mouse-over, add a deeper shadow */
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
   
-  /* Add some padding inside the card container */
   .container {
     padding: 2px 16px;
   }
@@ -117,3 +114,34 @@ h1 {
   .img-card{
     width: 300px;
   }
+
+/*--------------------------ETUDES----------------------------------------------------*/
+
+.etudes-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.etudes {
+
+    margin: 10px;
+    padding: 10px;
+}
+
+.dates-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dates {
+    margin: 10px;
+    padding: 10px;
+}
+
+.lorem-dates {
+    width: 70%;
+}
+
+

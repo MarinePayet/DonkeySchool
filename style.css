@@ -1,3 +1,9 @@
 :hover.effet {
     opacity: 0.5;
 }
+
+
+nav > img {
+    -webkit-filter: grayscale(100%); /* Pour les navigateurs Chrome, Safari, Opera */
+    filter: grayscale(100%); /* Firefox */
+}

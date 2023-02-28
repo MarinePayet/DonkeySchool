@@ -1,3 +1,30 @@
+/* ------------------------- HEADER --------------------------------*/
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.menu {
+    width: 900px;
+    display: flex;
+    justify-content:  space-around;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ------------------------- IMAGES ----------------------------- */
 

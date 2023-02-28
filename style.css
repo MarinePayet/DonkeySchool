@@ -2,14 +2,14 @@ img:hover {
     opacity: 0.5;
 }
 
-img {
-    border-radius: 3px;
-}
 
 nav > img {
     -webkit-filter: grayscale(100%); /* Pour les navigateurs Chrome, Safari, Opera */
-filter: grayscale(100%); /* Firefox */
+    filter: grayscale(100%); /* Firefox */
 }
+
+img {
+    border-radius: 3px;
 
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;

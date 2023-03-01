@@ -12,7 +12,7 @@
         <div class="menu-container" style="background-color: aliceblue;">
             <h1 ">MON PORFOLIO</h1>
         </div>
-        <nav>
+        <!--<nav>
             <div class="menu-container">
                 <div class="menu" style="background-color: forestgreen;">
                     <div class="dropdown">
@@ -28,7 +28,7 @@
                     <div>HOBBIES</div>    
                 </div>
             </div>
-        </nav>
+        </nav> -->
     </header>
     <section>
         <div class="menu-container">
@@ -36,7 +36,7 @@
         </div>
     </section>
     <div class="h3-projet">
-        <h3>POJETS REALISES</h3>
+        <h3>PROJETS REALISES</h3>
     </div> 
     <section class="projet-container">
        <div class="card">
@@ -101,49 +101,59 @@
             </div>
         </div>
     </section>
-    <section style="background-color: pink;">
-        <h3>ARTICLES</h3>
-        <div>
+    <h3>ARTICLES</h3>
+    <section >
+        <div class="card">
             <div>
-                <img src="/img/ashni-Wh9ZC4727e4-unsplash.jpg" alt="" width="400">
+                <img src="/img/ashni-Wh9ZC4727e4-unsplash.jpg" alt="" class="img-card">
             </div>
-            <div>
-                <h6>Article bliblablou</h6>
+            <div class="container">
+                <h4><b>Article bliblablou</b></h4>
             </div>
-            <div>
+            <div class="container">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut magni sunt fugiat architecto, error omnis? Nihil, commodi labore? Magni, fugit temporibus? Aliquam alias officia tempora ea. Deserunt, ratione ab!</p>
             </div>
-            <div>
-                <button><a href="#">Lire</a></button>
+            <div class="container">
+                <a href="#" class="lien-butt">Lire</a>
             </div>
         </div>
-        <div>
+        <div class="card">
             <div>
-                <img src="/img/markus-winkler-aId-xYRTlEc-unsplash.jpg" alt="" width="400">
+                <img src="/img/markus-winkler-aId-xYRTlEc-unsplash.jpg" alt="" class="img-card">
+            </div>
+            <div class="container">
+                <h4><b>Article blablablou</b></h4>
             </div>
             <div>
-                <h6>Article blablablou</h6>
+                <p class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut magni sunt fugiat architecto, error omnis? Nihil, commodi labore? Magni, fugit temporibus? Aliquam alias officia tempora ea. Deserunt, ratione ab!</p>
             </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut magni sunt fugiat architecto, error omnis? Nihil, commodi labore? Magni, fugit temporibus? Aliquam alias officia tempora ea. Deserunt, ratione ab!</p>
-            </div>
-            <div>
-                <button><a href="#">Lire</a></button>
+            <div class="container">
+                <a href="#" class="lien-butt">Lire</a>
             </div>
         </div>
     </section>
+    <h3>CONTACT</h3>
     <section style="background-color: red;">
-        <h3>CONTACT</h3>
-        <form action="" enctype="multipart/form-data" method="post">
-            <label for="name">Nom :</label>
-            <input type="text" placeholder="Votre nom">
-            <label for="surname">Prénom :</label>
-            <input type="text" placeholder="Votre prénom">
-            <label for="email">Email :</label>
-            <input type="text" placeholder="Votre e-mail">
-            <label for="msg"> Votre message :</label>
-            <textarea name="msg" id="" cols="30" rows="10"></textarea>
-        </form>
+        <div class="form-container" >
+                <form action="" enctype="multipart/form-data" method="post">
+                    <div style="background-color: blue;" class="form-input">
+                        <label for="name">Nom :</label>
+                        <input type="text" placeholder="Votre nom"; style="border-style: double; ">
+                    </div>
+                    <div class="form-input">
+                        <label for="surname">Prénom :</label>
+                        <input type="text" placeholder="Votre prénom">
+                    </div>
+                    <div class="form-input">
+                        <label for="email">Email :</label>
+                        <input type="text" placeholder="Votre e-mail">
+                    </div>
+                    <div >
+                        <label for="msg"> Votre message :</label>
+                        <textarea name="msg" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </form>
+        </div>
     </section>
     <footer style="background-color: darkorange;">
         <h4> Follow me </h4>

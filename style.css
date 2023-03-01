@@ -134,9 +134,16 @@
     max-width: 100%;
     display: flex;
     justify-content:  space-around;
+    flex-direction: row;
 }
 h1{
     max-width: 100%;
+}
+
+.li-menu{
+    list-style-type: none;
+    border-style: dotted;
+    margin: 6px;
 }
 
 /* ------------------------- IMAGES ----------------------------- */
@@ -169,6 +176,7 @@ img {
 .dropdown {
     position: relative;
     display: inline-block;
+    border-style: dashed;
 }
 
 .dropdown-content {

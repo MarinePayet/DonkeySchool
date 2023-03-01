@@ -9,16 +9,16 @@
     display: flex;
     justify-content: center;
     padding: 20px 0;
-}
+    }
 
-.menu {
-    max-width: 100%;
-    display: flex;
-    justify-content:  space-around;
-}
-h1{
-    max-width: 100%;
-}
+    .menu {
+        max-width: 100%;
+        display: flex;
+        justify-content:  space-around;
+    }
+    h1{
+        max-width: 100%;
+    }
   .projet-container {
       display: flex;
       justify-content: space-around;
@@ -47,12 +47,14 @@ h1{
   }
   .p-projet {
       width: 400px;
+      max-width: 100%;
   }
   
   .card {
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
       transition: 0.3s;
       width: 300px;
+      margin-bottom: 10px;
     }
     
     .card:hover {
@@ -63,16 +65,46 @@ h1{
       padding: 2px 16px;
     }
 
-header{
-    border-style: dashed;
-    max-width: 100%;
-}  
-.caroussel {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    border-style: dotted;
-}
+    header{
+        border-style: dashed;
+        max-width: 100%;
+    }  
+    .caroussel {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        border-style: dotted;
+    }
+
+    .etudes-container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .etudes {
+
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .dates-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .dates {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .lorem-dates {
+        width: 70%;
+    }
+
 
 }
 
@@ -169,14 +201,6 @@ h1 {
 
 
 /* ------------------------ PROJETS REALISES ------------------------------ */  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-
-
 
 .projet-container {
     display: flex;

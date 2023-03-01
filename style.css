@@ -139,6 +139,10 @@ h1{
     max-width: 100%;
 }
 
+.li-menu{
+    list-style-type: none;
+}
+
 /* ------------------------- IMAGES ----------------------------- */
 
 img:hover {

@@ -295,9 +295,23 @@ h1 {
 
 .form-container {
     display: flex;
-    
 }
 
-.form {
+textarea {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+label[for="msg"]{
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
 
+.form-input{
+    display: flex;
+    padding: 10px;
+}
+
+.form-input input {
+    flex-grow: 1;
+    margin-left: 10px;
 }

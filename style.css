@@ -1,3 +1,94 @@
+/*------------------------- MEDIA QUERIES ----------------------------- */
+
+/* Mobile Styles */
+@media only screen and (max-width: 320px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+  .menu-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.menu {
+    max-width: 100%;
+    display: flex;
+    justify-content:  space-around;
+}
+h1{
+    max-width: 100%;
+}
+  .projet-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 20px 20px;
+      max-width: 100%;
+      background-color: crimson;
+  }
+  .h3-projet{
+      display: flex;
+      align-items: center;
+      background-color: aliceblue;
+  }
+  .projet{
+      border-style: dashed;
+  }
+  
+  .img-projet {
+      width: 400px;
+      max-width: 100%;
+  }
+  
+  .img-card{
+    width: 300px;
+    max-width: 100%;
+  }
+  .p-projet {
+      width: 400px;
+  }
+  
+  .card {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      width: 300px;
+    }
+    
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    
+    .container {
+      padding: 2px 16px;
+    }
+
+header{
+    border-style: dashed;
+    max-width: 100%;
+}  
+.caroussel {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    border-style: dotted;
+}
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 321px) and (max-width: 960px) {
+  body {
+    background-color: #F5CF8E; /* Yellow */
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #B2D6FF; /* Blue */
+  }
+}
 /* ------------------------- HEADER --------------------------------*/
 
 .menu-container {
@@ -8,8 +99,12 @@
 
 .menu {
     width: 900px;
+    max-width: 100%;
     display: flex;
     justify-content:  space-around;
+}
+h1{
+    max-width: 100%;
 }
 
 /* ------------------------- IMAGES ----------------------------- */
@@ -73,88 +168,15 @@ h1 {
 }
 
 
-/* ------------------------ PROJETS REALISES ------------------------------ */
-1@media screen and (max-width: 320px) { 
-    .projet-container {
-        /*display: flex;
-        justify-content: center;
-        padding: 20px 0;
-        flex-wrap: wrap;
-        flex-direction: column;*/
-        width: 900px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-    .h3-projet{
-        display: flex;
-        align-items: center;
-        background-color: aliceblue;
-    }
-    .projet{
-        /*border-style: dashed;
-        flex-wrap: wrap;
-        flex-direction: column;*/
-        width: 900px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-    
-    .img-projet {
-        /*width: 400px;
-        flex-wrap: wrap;
-        flex-direction: column;*/
-        width: 900px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-    
-    .p-projet {
-        width: 400px;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    
-    .card {
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        transition: 0.3s;
-       /* width: 300px;
-        flex-wrap: wrap;
-        flex-direction: column;*/
-        width: 900px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: center;
-      }
-      
-      .card:hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-      }
-      
-      .container {
-        padding: 2px 16px;
-        flex-wrap: wrap;
-        flex-direction: column;
-      }
-    
-      .img-card{
-        /*width: 300px;
-        flex-wrap: wrap;
-        flex-direction: column;*/
-        width: 900px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: center;
+/* ------------------------ PROJETS REALISES ------------------------------ */  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
 
-      }
-}
+
 
 .projet-container {
     display: flex;
@@ -172,8 +194,13 @@ h1 {
 
 .img-projet {
     width: 400px;
+    max-width: 100%;
 }
 
+.img-card{
+  width: 300px;
+  max-width: 100%;
+}
 .p-projet {
     width: 400px;
 }
@@ -192,9 +219,6 @@ h1 {
     padding: 2px 16px;
   }
 
-  .img-card{
-    width: 300px;
-  }
 
 /*--------------------------ETUDES----------------------------------------------------*/
 

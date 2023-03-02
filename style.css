@@ -84,16 +84,15 @@
 
     .etudes-container{
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-around;
         align-items: center;
-        flex-wrap: wrap;
-        flex-direction: column;
     }
 
     .etudes {
 
         margin: 10px;
         padding: 10px;
+        font-size: 14px;
     }
 
     .dates-container{

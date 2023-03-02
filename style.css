@@ -413,6 +413,7 @@ label[for="msg"]{
     .nav > .nav-links > a {
       display: block;
       width: 100%;
+      
     }
     .nav > #nav-check:not(:checked) ~ .nav-links {
       height: 0px;
@@ -420,5 +421,12 @@ label[for="msg"]{
     .nav > #nav-check:checked ~ .nav-links {
       height: calc(100vh - 50px);
       overflow-y: auto;
+    }
+
+    .li-style{
+      list-style-type: none;
+      padding: 13px 10px 13px 10px;
+      text-decoration: none;
+      color: #efefef;
     }
   }

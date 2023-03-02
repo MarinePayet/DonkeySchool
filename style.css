@@ -453,3 +453,12 @@ label[for="msg"]{
   justify-content: center;
   padding: 10px 0;
   }
+
+.logo-rs{
+  padding: 20px;
+
+}
+.footer-container{
+  display: flex;
+  justify-content: space-around;
+}

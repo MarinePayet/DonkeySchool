@@ -3,7 +3,7 @@
 /* Mobile Styles */
 @media only screen and (max-width: 320px) {
   body {
-    background-color: #F09A9D; /* Red */
+    background-color: greenyellow; /* Red */
   }
   .menu-container {
     display: flex;
@@ -25,12 +25,10 @@
       flex-wrap: wrap;
       padding: 20px 20px;
       max-width: 100%;
-      background-color: crimson;
   }
   .h3-projet{
       display: flex;
       align-items: center;
-      background-color: aliceblue;
   }
   .h3-container {
     display: flex;
@@ -114,9 +112,9 @@
 
 /* Tablet Styles */
 @media only screen and (min-width: 321px) and (max-width: 960px) {
-  body {
+  /*body {
     background-color: #F5CF8E; /* Yellow */
-  }
+
 }
 
 /* Desktop Styles */
@@ -222,7 +220,6 @@ h1 {
 .h3-projet{
     display: flex;
     align-items: center;
-    background-color: aliceblue;
 }
 .projet{
     border-style: dashed;
@@ -261,8 +258,8 @@ h1 {
 
 .etudes-container{
     display: flex;
-    justify-content: flex-start;
     align-items: center;
+    background-color: pink;
 }
 
 .etudes {
@@ -275,6 +272,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: red;
 }
 
 .dates {
@@ -446,7 +444,6 @@ label[for="msg"]{
   .h3-projet{
     display: flex;
     align-items: center;
-    background-color: aliceblue;
 }
 .h3-container {
   display: flex;

@@ -35,9 +35,6 @@
     justify-content: center;
     padding: 10px 0;
     }
-  .projet{
-      border-style: dashed;
-  }
   
   .img-projet {
       width: 400px;
@@ -70,14 +67,12 @@
     }
 
     header{
-        border-style: dashed;
         max-width: 100%;
     }  
     .caroussel {
         display: flex;
         justify-content: center;
         max-width: 100%;
-        border-style: dotted;
     }
 
     .etudes-container{
@@ -458,4 +453,9 @@ label[for="msg"]{
 .footer-container{
   display: flex;
   justify-content: space-around;
+}
+.form-textarea{
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
 }

@@ -32,6 +32,11 @@
       align-items: center;
       background-color: aliceblue;
   }
+  .h3-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    }
   .projet{
       border-style: dashed;
   }
@@ -360,6 +365,7 @@ label[for="msg"]{
     display: inline;
     float: right;
     font-size: 18px;
+    text-decoration: none;  
   }
   
   .nav > .nav-links > a {
@@ -371,6 +377,7 @@ label[for="msg"]{
   
   .nav > .nav-links > a:hover {
     background-color: rgba(0, 0, 0, 0.132);
+    text-decoration: none;
   }
   
   .nav > #nav-check {
@@ -409,10 +416,12 @@ label[for="msg"]{
       overflow-y: hidden;
       top: 50px;
       left: 0px;
+      text-decoration: none;
     }
     .nav > .nav-links > a {
       display: block;
       width: 100%;
+      text-decoration: none;
     }
     .nav > #nav-check:not(:checked) ~ .nav-links {
       height: 0px;
@@ -421,4 +430,27 @@ label[for="msg"]{
       height: calc(100vh - 50px);
       overflow-y: auto;
     }
+
+  }
+
+  .li-style{
+    list-style-type: none;
+    padding: 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+
+  .a-li-style{
+    text-decoration: none;
+    color: #efefef;
+  }
+  .h3-projet{
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+}
+.h3-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
   }

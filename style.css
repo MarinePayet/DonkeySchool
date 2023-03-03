@@ -1,8 +1,16 @@
 /*------------------------- MEDIA QUERIES ----------------------------- */
-
+.form-md-screen {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 /* Mobile Styles */
-@media only screen and (max-width: 320px) {
-
+@media  (min-width: 320px) and (max-width: 768px) {
+  .form-md-screen {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
     .menu {
         max-width: 100%;
         display: flex;
@@ -20,14 +28,6 @@
       display: flex;
       align-items: center;
   }
-  .h3-container {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    border-bottom: dotted;
-    border-top: dotted;
-    border-color: pink;
-    }
   
   .img-projet {
       width: 400px;
@@ -49,6 +49,7 @@
       transition: 0.3s;
       width: 300px;
       margin-bottom: 10px;
+      border-style: dotted;
     }
     
     .card:hover {
@@ -98,12 +99,45 @@
 
 }
 
-/* Tablet Styles */
+/* Tablet Styles 
 @media only screen and (min-width: 321px) and (max-width: 960px) {
-  /*body {
-    background-color: #F5CF8E; /* Yellow */
-
+  * {
+    background-color: #F5CF8E; 
+  }
+  header{
+    max-width: 100%;
+}  
+.caroussel {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
 }
+.menu {
+  max-width: 100%;
+  display: flex;
+  justify-content:  space-around;
+}
+.p-projet {
+  width: 400px;
+  max-width: 100%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+}*/
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
@@ -111,6 +145,56 @@
     background-color: #B2D6FF; /* Blue */
   }
 }
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: pink;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+    text-decoration: none;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
+}
+
 /* ------------------------- HEADER --------------------------------*/
 
 .menu-container {
@@ -221,6 +305,8 @@ h1 {
 .img-card{
   width: 300px;
   max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 .p-projet {
     width: 400px;
@@ -231,6 +317,7 @@ h1 {
     transition: 0.3s;
     width: 300px;
     margin-bottom: 10px;
+    border-style: dotted;
   }
   
   .card:hover {
@@ -291,6 +378,7 @@ h1 {
 
 .form-container {
     display: flex;
+    justify-content: center;
 }
 
 textarea {
@@ -367,65 +455,20 @@ label[for="msg"]{
     display: none;
   }
   
-  @media (max-width:600px) {
-    .nav > .nav-btn {
-      display: inline-block;
-      position: absolute;
-      right: 0px;
-      top: 0px;
-    }
-    .nav > .nav-btn > label {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      padding: 13px;
-    }
-    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-      background-color: rgba(0, 0, 0, 0.08);
-    }
-    .nav > .nav-btn > label > span {
-      display: block;
-      width: 25px;
-      height: 10px;
-      border-top: 2px solid #eee;
-    }
-    .nav > .nav-links {
-      position: absolute;
-      display: block;
-      width: 100%;
-      background-color: pink;
-      height: 0px;
-      transition: all 0.3s ease-in;
-      overflow-y: hidden;
-      top: 50px;
-      left: 0px;
-      text-decoration: none;
-    }
-    .nav > .nav-links > a {
-      display: block;
-      width: 100%;
-      text-decoration: none;
-    }
-    .nav > #nav-check:not(:checked) ~ .nav-links {
-      height: 0px;
-    }
-    .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 50px);
-      overflow-y: auto;
-    }
-
-  }
-
+  
   .li-style{
     list-style-type: none;
     padding: 10px;
     text-decoration: none;
-    color: #efefef;
+    color: #fff;
+    display: inline-flex;
+    justify-content: flex-end;
   }
+  
 
   .a-li-style{
     text-decoration: none;
-    color: #efefef;
+    color: #fff;
   }
   .h3-projet{
     display: flex;
@@ -435,6 +478,10 @@ label[for="msg"]{
   display: flex;
   justify-content: center;
   padding: 10px 0;
+  border-bottom: dotted;
+  border-top: dotted;
+  border-color: pink;
+    
   }
 
 .logo-rs{
@@ -449,4 +496,10 @@ label[for="msg"]{
   display: flex;
   flex-direction: column;
   padding-left: 10px;
+}
+.container-img{
+  width: 300px;
+  max-width: 100%;
+  max-height: 199px;
+  object-fit: cover;
 }

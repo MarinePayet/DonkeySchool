@@ -503,3 +503,7 @@ label[for="msg"]{
   max-height: 199px;
   object-fit: cover;
 }
+
+h4{
+  font-size: bold;
+}

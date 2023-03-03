@@ -1,8 +1,16 @@
 /*------------------------- MEDIA QUERIES ----------------------------- */
-
+.form-md-screen {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 /* Mobile Styles */
 @media  (min-width: 320px) and (max-width: 768px) {
-
+  .form-md-screen {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
     .menu {
         max-width: 100%;
         display: flex;
@@ -20,14 +28,6 @@
       display: flex;
       align-items: center;
   }
-  .h3-container {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    border-bottom: dotted;
-    border-top: dotted;
-    border-color: pink;
-    }
   
   .img-projet {
       width: 400px;
@@ -378,6 +378,7 @@ h1 {
 
 .form-container {
     display: flex;
+    justify-content: center;
 }
 
 textarea {
@@ -463,6 +464,7 @@ label[for="msg"]{
     display: inline-flex;
     justify-content: flex-end;
   }
+  
 
   .a-li-style{
     text-decoration: none;
@@ -476,6 +478,10 @@ label[for="msg"]{
   display: flex;
   justify-content: center;
   padding: 10px 0;
+  border-bottom: dotted;
+  border-top: dotted;
+  border-color: pink;
+    
   }
 
 .logo-rs{

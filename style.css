@@ -2,23 +2,13 @@
 
 /* Mobile Styles */
 @media only screen and (max-width: 320px) {
-  body {
-    background-color: greenyellow; /* Red */
-  }
-  .menu-container {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    }
 
     .menu {
         max-width: 100%;
         display: flex;
         justify-content:  space-around;
     }
-    h1{
-        max-width: 100%;
-    }
+   
   .projet-container {
       display: flex;
       justify-content: space-around;
@@ -34,6 +24,9 @@
     display: flex;
     justify-content: center;
     padding: 10px 0;
+    border-bottom: dotted;
+    border-top: dotted;
+    border-color: pink;
     }
   
   .img-projet {
@@ -254,7 +247,6 @@ h1 {
 .etudes-container{
     display: flex;
     align-items: center;
-    background-color: pink;
 }
 
 .etudes {
@@ -267,7 +259,6 @@ h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: red;
 }
 
 .dates {

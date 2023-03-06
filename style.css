@@ -422,11 +422,31 @@
 
 
 /* ------------------------- HEADER --------------------------------*/
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: pink;
+  position: fixed;
+}
 
 .menu-container {
     display: flex;
     justify-content: center;
     padding: 20px 0;
+}
+.header-fixed{
+  position: fixed;
+  width: 100%;
+  top:0;
+}
+header > .menu-container{
+  /* position: fixed; */
+  border-style: dotted;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  /* z-index: 1;
+  top:0; */
 }
 
 .menu {
@@ -436,13 +456,14 @@
     justify-content:  space-around;
     flex-direction: row;
 }
-h1{
+
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
     max-width: 100%;
 }
 
 .li-menu{
     list-style-type: none;
-    border-style: dotted;
     margin: 6px;
 }
 
@@ -503,9 +524,7 @@ img {
     background-color: #f1f1f1
   }
 
-h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
+
 
 
 /* ------------------------ PROJETS REALISES ------------------------------ */  
@@ -675,4 +694,6 @@ label[for="msg"]{
 h4{
   font-size: bold;
 }
+
+
 

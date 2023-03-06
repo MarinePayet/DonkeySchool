@@ -9,7 +9,6 @@
   height: 50px;
   width: 100%;
   background-color: pink;
-  position: relative;
 }
 
 .nav > .nav-header {
@@ -109,7 +108,6 @@
     transition: 0.3s;
     width: 300px;
     margin-bottom: 10px;
-    border-style: dotted;
   }
   
   .card:hover {
@@ -161,7 +159,6 @@
     height: 50px;
     width: 100%;
     background-color: pink;
-    position: relative;
   }
   
   .nav > .nav-header {
@@ -231,7 +228,7 @@
    
   .projet-container {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-around; 
       flex-wrap: wrap;
       padding: 20px 20px;
       max-width: 100%;
@@ -422,11 +419,31 @@
 
 
 /* ------------------------- HEADER --------------------------------*/
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: pink;
+  position: sticky;
+  z-index: 999;
+}
 
 .menu-container {
     display: flex;
     justify-content: center;
     padding: 20px 0;
+}
+.header-fixed{
+  position: sticky;
+  width: 100%;
+  top:0;
+  z-index: 999;
+}
+header > .menu-container{
+  border-style: dotted;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  z-index: 999;
 }
 
 .menu {
@@ -436,13 +453,14 @@
     justify-content:  space-around;
     flex-direction: row;
 }
-h1{
+
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
     max-width: 100%;
 }
 
 .li-menu{
     list-style-type: none;
-    border-style: dotted;
     margin: 6px;
 }
 
@@ -503,9 +521,7 @@ img {
     background-color: #f1f1f1
   }
 
-h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
+
 
 
 /* ------------------------ PROJETS REALISES ------------------------------ */  
@@ -675,4 +691,6 @@ label[for="msg"]{
 h4{
   font-size: bold;
 }
+
+
 

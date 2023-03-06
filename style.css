@@ -9,7 +9,6 @@
   height: 50px;
   width: 100%;
   background-color: pink;
-  position: relative;
 }
 
 .nav > .nav-header {
@@ -109,7 +108,6 @@
     transition: 0.3s;
     width: 300px;
     margin-bottom: 10px;
-    border-style: dotted;
   }
   
   .card:hover {
@@ -161,7 +159,6 @@
     height: 50px;
     width: 100%;
     background-color: pink;
-    position: relative;
   }
   
   .nav > .nav-header {
@@ -231,7 +228,7 @@
    
   .projet-container {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-around; 
       flex-wrap: wrap;
       padding: 20px 20px;
       max-width: 100%;
@@ -426,7 +423,7 @@
   height: 50px;
   width: 100%;
   background-color: pink;
-  position: fixed;
+  position: sticky;
   z-index: 999;
 }
 
@@ -434,23 +431,19 @@
     display: flex;
     justify-content: center;
     padding: 20px 0;
-    z-index: 999;
 }
 .header-fixed{
-  position: fixed;
+  position: sticky;
   width: 100%;
   top:0;
   z-index: 999;
 }
 header > .menu-container{
-  /* position: fixed; */
   border-style: dotted;
   display: flex;
   justify-content: center;
   padding: 20px 0;
   z-index: 999;
-  /* z-index: 1;
-  top:0; */
 }
 
 .menu {

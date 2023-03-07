@@ -338,11 +338,6 @@ header{
 
 /* ------------------------- IMAGES ----------------------------- */
 
-img:hover {
-    opacity: 0.5;
-}
-
-
 nav > img {
     -webkit-filter: grayscale(100%); /* Pour les navigateurs Chrome, Safari, Opera */
     filter: grayscale(100%); /* Firefox */
@@ -353,7 +348,12 @@ img {
 }
 
 .caroussel:hover {
-    opacity: 1;
+    opacity: 0.3;
+}
+.caroussel:hover + p{
+  opacity: 1;
+  visibility: visible;
+  font-size: larger;
 }
 
 .caroussel {
@@ -367,6 +367,27 @@ img {
   max-height: 199px;
   object-fit: cover;
 }
+
+.caroussel-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden
+}
+
+/* .caroussel:hover .centered {
+  visibility: visible;
+  border-style: dotted;
+} */
+  
 
 /* ------------------------ PROJETS REALISES ------------------------------ */  
 

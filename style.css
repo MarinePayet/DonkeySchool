@@ -421,6 +421,16 @@ img + .centered:hover{
   
 
 /* ------------------------ PROJETS REALISES ------------------------------ */  
+/* .logo-card {
+  width: 30px;
+} */
+
+.logo-card-container {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10px;
+}
+
 
 .projet-container {
   display: flex;
@@ -551,7 +561,7 @@ img + .centered:hover{
 textarea {
     margin-left: 10px;
     margin-top: 10px;
-    resize: none;
+    resize: none !important;
 }
 label[for="msg"]{
     margin-left: 10px;
